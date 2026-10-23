@@ -1,3 +1,4 @@
+import { AppGate } from '@/components/calculator/app-gate'
 import { TopNav } from '@/components/dashboard/top-nav'
 import { LeftSidebar } from '@/components/dashboard/left-sidebar'
 import { MapPanel } from '@/components/dashboard/map-panel'
@@ -10,6 +11,7 @@ import { HelpDirectory } from '@/components/dashboard/help-directory'
 
 export default function Page() {
   return (
+    <AppGate>
     <div className="min-h-dvh bg-background text-foreground">
       <TopNav />
       <div className="mx-auto grid max-w-[1600px] grid-cols-1 gap-6 px-4 py-6 md:px-6 xl:grid-cols-[280px_minmax(0,1fr)_360px]">
@@ -42,5 +44,6 @@ export default function Page() {
         </aside>
       </div>
     </div>
+    </AppGate>
   )
 }
