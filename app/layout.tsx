@@ -7,9 +7,9 @@ const _geistSans = Geist({ subsets: ['latin'] })
 const _geistMono = Geist_Mono({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Halcyon — Your everyday health & wellness companion',
+  title: 'SmartCalc Toolkit',
   description:
-    'Halcyon brings medication reminders, care-team messaging, symptom tracking and wellness insights together in one calm, secure companion app.',
+    'Safe Journey — a discreet personal safety dashboard with smart routes, live tracking, SOS and verified local support.',
   generator: 'v0.app',
   icons: {
     icon: [
