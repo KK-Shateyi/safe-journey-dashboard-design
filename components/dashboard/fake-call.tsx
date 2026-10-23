@@ -33,7 +33,7 @@ export function FakeCall() {
       />
 
       <fieldset className="mb-4 flex flex-col gap-2">
-        <legend className="mb-2 text-xs font-medium text-navy">Caller</legend>
+        <legend className="mb-2 text-xs font-medium text-foreground">Caller</legend>
         <div className="flex flex-wrap gap-2">
           {CALLERS.map((c) => (
             <button
@@ -45,7 +45,7 @@ export function FakeCall() {
                 'rounded-lg border px-2.5 py-1.5 text-xs transition-all duration-200',
                 caller === c
                   ? 'border-teal bg-accent font-medium text-teal'
-                  : 'border-border text-muted-foreground hover:border-teal/40 hover:text-navy',
+                  : 'border-border text-muted-foreground hover:border-teal/40 hover:text-foreground',
               )}
             >
               {c}
@@ -56,7 +56,7 @@ export function FakeCall() {
 
       <div className="mb-4 flex flex-col gap-2">
         <div className="flex items-center justify-between text-xs">
-          <label htmlFor="fake-call-delay" className="font-medium text-navy">
+          <label htmlFor="fake-call-delay" className="font-medium text-foreground">
             Ring after
           </label>
           <span className="font-mono tabular-nums text-teal">{delay}s</span>

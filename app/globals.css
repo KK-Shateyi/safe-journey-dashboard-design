@@ -42,30 +42,30 @@
 }
 
 :root {
-  color-scheme: light;
-  --navy: #0a2540;
+  color-scheme: dark;
+  --navy: #11304f;
   --teal: #009ca6;
   --teal-hover: #00828a;
   --mint: #2cd5c4;
-  --surface: #f8fafc;
+  --surface: #1a1d23;
 
-  --background: #f8fafc;
-  --foreground: #0a2540;
-  --card: #ffffff;
-  --card-foreground: #0a2540;
-  --popover: #ffffff;
-  --popover-foreground: #0a2540;
+  --background: #0b0d10;
+  --foreground: #e6edf3;
+  --card: #14171c;
+  --card-foreground: #e6edf3;
+  --popover: #14171c;
+  --popover-foreground: #e6edf3;
   --primary: #009ca6;
   --primary-foreground: #ffffff;
-  --secondary: #eef4f7;
-  --secondary-foreground: #0a2540;
-  --muted: #eef2f6;
-  --muted-foreground: #5b6b7f;
-  --accent: #e6f7f6;
-  --accent-foreground: #0a2540;
-  --destructive: #dc2626;
-  --border: #e3e9ef;
-  --input: #e3e9ef;
+  --secondary: #1a1d23;
+  --secondary-foreground: #e6edf3;
+  --muted: #22262d;
+  --muted-foreground: #8b96a5;
+  --accent: #0f2a2d;
+  --accent-foreground: #e6edf3;
+  --destructive: #ef4444;
+  --border: #262a31;
+  --input: #262a31;
   --ring: #009ca6;
   --radius: 0.75rem;
 }

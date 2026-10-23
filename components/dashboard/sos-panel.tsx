@@ -33,7 +33,7 @@ export function SosPanel() {
               setCountdown(3)
             }
           }}
-          className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-red-600 py-4 text-xl font-bold tracking-wider text-white uppercase shadow-lg shadow-red-200 transition-all duration-200 hover:bg-red-700 active:scale-[0.98]"
+          className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-red-600 py-4 text-xl font-bold tracking-wider text-white uppercase shadow-lg shadow-red-950/60 transition-all duration-200 hover:bg-red-700 active:scale-[0.98]"
         >
           <Siren className="size-6" aria-hidden="true" />
           {active ? `Cancel · ${countdown}` : 'SOS'}
@@ -42,7 +42,7 @@ export function SosPanel() {
           href="tel:911"
           aria-label="Speed Dial Emergency Services (911)"
           title="Speed Dial Emergency Services"
-          className="flex w-16 shrink-0 flex-col items-center justify-center gap-1 rounded-xl border-2 border-red-600/20 bg-red-50 text-red-600 transition-all duration-200 hover:border-red-600 hover:bg-red-100"
+          className="flex w-16 shrink-0 flex-col items-center justify-center gap-1 rounded-xl border-2 border-red-500/30 bg-red-500/10 text-red-400 transition-all duration-200 hover:border-red-500 hover:bg-red-500/20"
         >
           <Phone className="size-5" aria-hidden="true" />
           <span className="text-[10px] font-bold">911</span>

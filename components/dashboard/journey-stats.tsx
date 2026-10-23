@@ -16,7 +16,7 @@ export function JourneyStats() {
             <Icon className="size-3.5 text-teal" aria-hidden="true" />
             {label}
           </dt>
-          <dd className="text-lg font-semibold tracking-tight text-navy">{value}</dd>
+          <dd className="text-lg font-semibold tracking-tight text-foreground">{value}</dd>
           <dd className="text-[11px] text-muted-foreground">{hint}</dd>
         </div>
       ))}

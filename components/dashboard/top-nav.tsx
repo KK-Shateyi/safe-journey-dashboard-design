@@ -46,7 +46,7 @@ export function TopNav() {
               )}
             </span>
             <div className="flex flex-col leading-tight">
-              <span className="text-sm font-semibold tracking-tight text-navy">
+              <span className="text-sm font-semibold tracking-tight text-foreground">
                 {unlocked ? 'Safe Journey' : 'SmartCalc Toolkit'}
               </span>
               <span className="text-xs text-muted-foreground">
@@ -61,7 +61,7 @@ export function TopNav() {
               onClick={() => setClockVisible((v) => !v)}
               aria-pressed={clockVisible}
               aria-label={clockVisible ? 'Hide clock' : 'Show clock'}
-              className="group flex items-center gap-2 rounded-lg border border-border bg-surface px-2.5 py-1.5 text-xs text-muted-foreground transition-all duration-200 hover:border-teal/40 hover:text-navy"
+              className="group flex items-center gap-2 rounded-lg border border-border bg-surface px-2.5 py-1.5 text-xs text-muted-foreground transition-all duration-200 hover:border-teal/40 hover:text-foreground"
             >
               {clockVisible ? (
                 <EyeOff className="size-3.5" aria-hidden="true" />
@@ -71,7 +71,7 @@ export function TopNav() {
               <span
                 className={cn(
                   'font-mono tabular-nums transition-all duration-200',
-                  clockVisible ? 'text-navy' : 'blur-[5px] select-none',
+                  clockVisible ? 'text-foreground' : 'blur-[5px] select-none',
                 )}
                 suppressHydrationWarning
               >

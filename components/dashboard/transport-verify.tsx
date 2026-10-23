@@ -23,7 +23,7 @@ export function TransportVerify() {
         <span className="flex size-9 items-center justify-center rounded-full bg-card text-teal shadow-sm">
           <Upload className="size-4" aria-hidden="true" />
         </span>
-        <span className="text-sm font-semibold text-navy">Upload Taxi Plate / Driver ID Photo</span>
+        <span className="text-sm font-semibold text-foreground">Upload Taxi Plate / Driver ID Photo</span>
         <span className="text-[11px] text-muted-foreground">
           {fileName ?? 'JPG, PNG or HEIC · stored encrypted for 30 days'}
         </span>
@@ -46,7 +46,7 @@ export function TransportVerify() {
         ) : (
           <Share2 className="mt-0.5 size-4 shrink-0 text-teal" aria-hidden="true" />
         )}
-        <p className="text-navy">
+        <p className="text-foreground">
           {fileName ? (
             <>
               <span className="font-semibold">Shared automatically</span> with Mom, Priya, Daniel & Grace

@@ -75,12 +75,12 @@ export function PinModal({
             type="button"
             onClick={onClose}
             aria-label="Close"
-            className="rounded-lg p-1.5 text-muted-foreground transition-all duration-200 hover:bg-muted hover:text-navy"
+            className="rounded-lg p-1.5 text-muted-foreground transition-all duration-200 hover:bg-muted hover:text-foreground"
           >
             <X className="size-4" aria-hidden="true" />
           </button>
         </div>
-        <h2 id="pin-title" className="text-base font-semibold text-navy">
+        <h2 id="pin-title" className="text-base font-semibold text-foreground">
           Enter your 4-digit PIN
         </h2>
         <p className="mt-1 text-xs leading-relaxed text-muted-foreground">
@@ -116,7 +116,7 @@ export function PinModal({
                 type="button"
                 onClick={() => press(key)}
                 aria-label={key === 'del' ? 'Delete digit' : key}
-                className="flex h-12 items-center justify-center rounded-xl bg-surface font-mono text-lg font-medium text-navy transition-all duration-200 hover:bg-accent active:scale-95"
+                className="flex h-12 items-center justify-center rounded-xl bg-surface font-mono text-lg font-medium text-foreground transition-all duration-200 hover:bg-accent active:scale-95"
               >
                 {key === 'del' ? <Delete className="size-5" aria-hidden="true" /> : key}
               </button>

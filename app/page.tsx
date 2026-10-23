@@ -10,7 +10,7 @@ import { HelpDirectory } from '@/components/dashboard/help-directory'
 
 export default function Page() {
   return (
-    <div className="min-h-dvh bg-surface text-navy">
+    <div className="min-h-dvh bg-background text-foreground">
       <TopNav />
       <div className="mx-auto grid max-w-[1600px] grid-cols-1 gap-6 px-4 py-6 md:px-6 xl:grid-cols-[280px_minmax(0,1fr)_360px]">
         <aside aria-label="Navigation and safety settings" className="order-3 xl:order-1">

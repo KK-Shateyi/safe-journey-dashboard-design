@@ -70,7 +70,7 @@ function NavSection({ title, items }: { title: string; items: NavItem[] }) {
                 'flex items-center gap-3 rounded-lg px-3 py-2 text-sm transition-all duration-200',
                 active
                   ? 'bg-navy font-medium text-primary-foreground'
-                  : 'text-navy/80 hover:bg-accent hover:text-navy',
+                  : 'text-foreground/80 hover:bg-accent hover:text-foreground',
               )}
             >
               <Icon
@@ -110,7 +110,7 @@ export function LeftSidebar() {
             <span className="absolute -right-0.5 -bottom-0.5 size-3.5 rounded-full border-2 border-card bg-mint" />
           </div>
           <div className="flex min-w-0 flex-col">
-            <p className="truncate text-sm font-semibold text-navy">Amara Okafor</p>
+            <p className="truncate text-sm font-semibold text-foreground">Amara Okafor</p>
             <p className="truncate text-xs text-muted-foreground">Connected · 4 ICE contacts synced</p>
           </div>
         </div>
@@ -119,7 +119,7 @@ export function LeftSidebar() {
           <div className="flex items-center gap-2.5">
             <WifiOff className="size-4 text-teal" aria-hidden="true" />
             <div className="flex flex-col">
-              <span id="offline-label" className="text-xs font-semibold text-navy">
+              <span id="offline-label" className="text-xs font-semibold text-foreground">
                 Offline Mode Enabled
               </span>
               <span className="text-[11px] text-muted-foreground">
@@ -140,7 +140,7 @@ export function LeftSidebar() {
           >
             <span
               className={cn(
-                'absolute top-0.5 left-0.5 size-5 rounded-full bg-card shadow transition-all duration-200',
+                'absolute top-0.5 left-0.5 size-5 rounded-full bg-white shadow transition-all duration-200',
                 offline && 'translate-x-5',
               )}
             />
@@ -164,7 +164,7 @@ export function LeftSidebar() {
           {PROGRESS.map(({ label, value }) => (
             <div key={label} className="flex flex-col gap-1.5">
               <div className="flex items-center justify-between text-xs">
-                <span className="font-medium text-navy">{label}</span>
+                <span className="font-medium text-foreground">{label}</span>
                 <span className="font-mono tabular-nums text-muted-foreground">
                   {value}% Complete
                 </span>
@@ -196,7 +196,7 @@ export function LeftSidebar() {
               ) : (
                 <Circle className="mt-0.5 size-4 shrink-0 text-border" aria-hidden="true" />
               )}
-              <span className={done ? 'text-muted-foreground line-through decoration-border' : 'text-navy'}>
+              <span className={done ? 'text-muted-foreground line-through decoration-border' : 'text-foreground'}>
                 {label}
               </span>
               <span className="sr-only">{done ? '(done)' : '(to do)'}</span>

@@ -11,7 +11,7 @@ export function Panel({
   return (
     <section
       className={cn(
-        'rounded-2xl border border-border bg-card p-5 shadow-[0_1px_2px_rgba(10,37,64,0.04),0_8px_24px_-12px_rgba(10,37,64,0.08)]',
+        'rounded-2xl border border-border bg-card p-5 shadow-[0_1px_2px_rgba(0,0,0,0.3),0_8px_24px_-12px_rgba(0,0,0,0.5)]',
         className,
       )}
     >
@@ -38,7 +38,7 @@ export function PanelHeader({
           <Icon className="size-[18px]" aria-hidden="true" />
         </span>
         <div className="flex flex-col">
-          <h2 className="text-sm font-semibold text-navy">{title}</h2>
+          <h2 className="text-sm font-semibold text-foreground">{title}</h2>
           {description ? (
             <p className="text-xs leading-relaxed text-muted-foreground">{description}</p>
           ) : null}

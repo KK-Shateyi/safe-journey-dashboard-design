@@ -18,7 +18,7 @@ export function MapPanel() {
   return (
     <section
       aria-label="Live map with smart route and movement tracking"
-      className="relative overflow-hidden rounded-2xl border border-border bg-slate-100"
+      className="relative overflow-hidden rounded-2xl border border-border bg-surface"
     >
       <div className="relative aspect-[5/3] w-full sm:aspect-[16/10]">
         <div
@@ -26,7 +26,7 @@ export function MapPanel() {
           className="absolute inset-0 opacity-70"
           style={{
             backgroundImage:
-              'linear-gradient(to right, rgba(10,37,64,0.06) 1px, transparent 1px), linear-gradient(to bottom, rgba(10,37,64,0.06) 1px, transparent 1px)',
+              'linear-gradient(to right, rgba(255,255,255,0.045) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.045) 1px, transparent 1px)',
             backgroundSize: '32px 32px',
           }}
         />
@@ -47,37 +47,37 @@ export function MapPanel() {
             </filter>
           </defs>
 
-          <path d="M 0 300 L 900 220" stroke="#ffffff" strokeWidth="22" fill="none" />
-          <path d="M 380 0 L 520 540" stroke="#ffffff" strokeWidth="18" fill="none" />
-          <path d="M 0 120 L 900 160" stroke="#ffffff" strokeWidth="12" fill="none" />
-          <path d="M 700 0 L 640 540" stroke="#ffffff" strokeWidth="12" fill="none" />
-          <path d="M 120 540 L 240 0" stroke="#ffffff" strokeWidth="10" fill="none" />
+          <path d="M 0 300 L 900 220" stroke="#1f242c" strokeWidth="22" fill="none" />
+          <path d="M 380 0 L 520 540" stroke="#1f242c" strokeWidth="18" fill="none" />
+          <path d="M 0 120 L 900 160" stroke="#1f242c" strokeWidth="12" fill="none" />
+          <path d="M 700 0 L 640 540" stroke="#1f242c" strokeWidth="12" fill="none" />
+          <path d="M 120 540 L 240 0" stroke="#1f242c" strokeWidth="10" fill="none" />
 
           {BLOCKS.map((b, i) => (
-            <rect key={i} x={b.x} y={b.y} width={b.w} height={b.h} rx="10" fill="#0a2540" opacity="0.05" />
+            <rect key={i} x={b.x} y={b.y} width={b.w} height={b.h} rx="10" fill="#ffffff" opacity="0.03" />
           ))}
           <rect x="470" y="40" width="160" height="80" rx="14" fill="#2cd5c4" opacity="0.14" />
 
-          <path d={ALT_ROUTE} stroke="#0a2540" strokeOpacity="0.22" strokeWidth="5" fill="none" strokeDasharray="2 10" strokeLinecap="round" />
+          <path d={ALT_ROUTE} stroke="#8b96a5" strokeOpacity="0.4" strokeWidth="5" fill="none" strokeDasharray="2 10" strokeLinecap="round" />
 
           <path d={ROUTE} stroke="#2cd5c4" strokeOpacity="0.35" strokeWidth="18" fill="none" strokeLinecap="round" filter="url(#glow)" />
           <path d={ROUTE} stroke="#2cd5c4" strokeWidth="7" fill="none" strokeLinecap="round" />
           <path d={ROUTE} stroke="#ffffff" strokeOpacity="0.9" strokeWidth="2" fill="none" strokeLinecap="round" className="route-flow" />
 
-          <circle cx="90" cy="470" r="9" fill="#0a2540" />
-          <circle cx="90" cy="470" r="4" fill="#ffffff" />
+          <circle cx="90" cy="470" r="9" fill="#e6edf3" />
+          <circle cx="90" cy="470" r="4" fill="#0b0d10" />
 
           <circle cx="420" cy="260" r="40" fill="#2cd5c4" opacity="0.15" />
           <circle cx="420" cy="260" r="16" fill="#2cd5c4" opacity="0.6">
             <animate attributeName="r" values="16;46" dur="1.6s" repeatCount="indefinite" />
             <animate attributeName="opacity" values="0.6;0" dur="1.6s" repeatCount="indefinite" />
           </circle>
-          <circle cx="420" cy="260" r="16" fill="#009ca6" stroke="#ffffff" strokeWidth="5" />
+          <circle cx="420" cy="260" r="16" fill="#009ca6" stroke="#0b0d10" strokeWidth="5" />
           <foreignObject x="408" y="248" width="24" height="24">
             <Navigation className="size-6 rotate-45 fill-primary-foreground p-1 text-primary-foreground" />
           </foreignObject>
 
-          <circle cx="730" cy="120" r="18" fill="#0a2540" />
+          <circle cx="730" cy="120" r="18" fill="#11304f" />
           <foreignObject x="718" y="108" width="24" height="24">
             <Flag className="size-6 p-1 text-mint" />
           </foreignObject>
@@ -88,7 +88,7 @@ export function MapPanel() {
           <div className="flex items-center gap-2 rounded-xl bg-card/95 px-3 py-2 shadow-sm backdrop-blur">
             <ShieldCheck className="size-4 text-teal" aria-hidden="true" />
             <div className="flex flex-col leading-tight">
-              <span className="text-xs font-semibold text-navy">Smart Route Recommendation</span>
+              <span className="text-xs font-semibold text-foreground">Smart Route Recommendation</span>
               <span className="text-[11px] text-muted-foreground"><span className="hidden sm:inline">Well-lit · 3 open venues · CCTV covered</span></span>
             </div>
           </div>
@@ -102,11 +102,11 @@ export function MapPanel() {
         </div>
 
         <div className="absolute top-4 right-4 flex flex-col overflow-hidden rounded-xl bg-card shadow-sm">
-          <button type="button" aria-label="Zoom in" className="p-2 text-navy transition-all duration-200 hover:bg-accent">
+          <button type="button" aria-label="Zoom in" className="p-2 text-foreground transition-all duration-200 hover:bg-accent">
             <Plus className="size-4" aria-hidden="true" />
           </button>
           <span className="h-px bg-border" />
-          <button type="button" aria-label="Zoom out" className="p-2 text-navy transition-all duration-200 hover:bg-accent">
+          <button type="button" aria-label="Zoom out" className="p-2 text-foreground transition-all duration-200 hover:bg-accent">
             <Minus className="size-4" aria-hidden="true" />
           </button>
           <span className="h-px bg-border" />

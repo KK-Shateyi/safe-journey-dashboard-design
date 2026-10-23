@@ -52,7 +52,7 @@ export function HelpDirectory() {
           >
             <div className="flex items-start justify-between gap-2">
               <div className="flex min-w-0 flex-col gap-0.5">
-                <p className="flex items-center gap-1.5 text-sm font-semibold text-navy">
+                <p className="flex items-center gap-1.5 text-sm font-semibold text-foreground">
                   <span className="truncate">{p.name}</span>
                   <BadgeCheck className="size-4 shrink-0 text-teal" aria-label="Verified" />
                 </p>
@@ -64,7 +64,7 @@ export function HelpDirectory() {
                 {p.distance}
               </span>
             </div>
-            <p className="flex items-start gap-1.5 text-xs leading-relaxed text-navy/80">
+            <p className="flex items-start gap-1.5 text-xs leading-relaxed text-foreground/80">
               <MapPin className="mt-0.5 size-3.5 shrink-0 text-muted-foreground" aria-hidden="true" />
               {p.address}
             </p>
